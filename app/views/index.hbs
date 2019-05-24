@@ -1,0 +1,704 @@
+<body class="has-navbar-fixed p-0">
+{{#each thebody}}
+    Key: {{@key}} Value = {{this}}
+{{/each}}
+<!-- Navigation -->
+<nav class="navbar navbar-2 navbar-fixed navbar-expand-lg navbar-top-transparent navbar-top-dark navbar-light">
+    <div class="navbar-wrapper affix">
+
+        <!-- Navigation Line -->
+        <div class="navbar-line bg-white">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="http://vtdes.ru/demo/clarity/1.1.1/index.html">NuHorizon</a>
+                <!-- /Brand -->
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button"
+                        data-toggle="collapse" data-target="#navigation"
+                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /Toggler -->
+
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Navigation Item -->
+                        <li class="nav-item">
+                            <a class="nav-link smooth-scroll" href="index.html#home">Home</a>
+                        </li>
+                        <!-- /Navigation Item -->
+
+                        <!-- Navigation Item -->
+                        <li class="nav-item">
+                            <a class="nav-link smooth-scroll" href="index.html#about">About</a>
+                        </li>
+                        <!-- /Navigation Item -->
+
+                        <!-- Navigation Item -->
+                        <li class="nav-item">
+                            <a class="nav-link smooth-scroll" href="index.html#projects">Projects</a>
+                        </li>
+                        <!-- /Navigation Item -->
+
+                        <!-- Navigation Item -->
+                        <li class="nav-item">
+                            <a class="nav-link smooth-scroll" href="index.html#testimonials">Testimonials</a>
+                        </li>
+                        <!-- /Navigation Item -->
+
+                        <!-- Navigation Item -->
+                        <li class="nav-item">
+                            <a class="nav-link smooth-scroll" href="index.html#contact">Contact</a>
+                        </li>
+                        <!-- /Navigation Item -->
+
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="https://1.envato.market/rWBad" target="_blank" class="nav-btn btn btn-circle btn-light">
+                                <i class="icon fa fa-shopping-cart"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /Collapse -->
+
+            </div>
+        </div>
+        <!-- /Navigation Line -->
+
+    </div>
+</nav>
+<!-- /Navigation -->
+
+
+<!-- Hero -->
+<header id="home" class="h-100 position-relative mask bg-fixed hero__image">
+    <!-- Middle Wrapper -->
+    <div class="middle">
+
+        <!-- Content Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="display-4 text-white font-primary-thin line-0p5">Bringing things to NuHorizon</div>
+                    <a href="#booking-form" class="btn btn-lg btn-outline-primary popup-modal">Book Now</a>
+                    <div class="form-container mfp-hide" id="booking-form">
+                        <form class="form-ajax" method="POST" action="api/booking">
+
+                            <!-- Form Hidden Fields -->
+                            <input type="hidden" name="form" value="Contact">
+                            <!-- /Form Hidden Fields -->
+
+                            <!-- Row -->
+                            <div class="row">
+
+                                <!-- Form Group -->
+                                <div class="form-group col-md-6">
+                                    <div class="md-input">
+                                        <label for="frm-contact-name" class="md-label">Your Name</label>
+                                        <input id="frm-contact-name" type="text" name="name" class="form-control md-form-control" placeholder="Your Name... *" required>
+                                    </div>
+                                </div>
+                                <!-- /Form Group -->
+
+                                <!-- Form Group -->
+                                <div class="form-group col-md-6">
+                                    <div class="md-input">
+                                        <label for="frm-contact-email" class="md-label">E-mail address</label>
+                                        <input id="frm-contact-email" type="email" name="email" class="md-form-control form-control" placeholder="E-mail address... *" required>
+                                    </div>
+                                </div>
+                                <!-- /Form Group -->
+
+                            </div>
+                            <!-- /Row -->
+
+                            <!-- Form Group -->
+                            <div class="form-group mb-4">
+                                <div class="md-input">
+                                    <label for="frm-contact-message" class="md-label">Date</label>
+                                    <input type="date" id="date" name="event_date" class="md-form-control form-control form-control--date">
+                                </div>
+                            </div>
+                            <!-- /Form Group -->
+
+                            <!-- Send Message Button -->
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <!-- /Send Message Button -->
+
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /Content Container -->
+
+    </div>
+    <!-- /Middle Wrapper -->
+
+    <!-- Scroll Button -->
+    <a href="index.html#about" class="hero-scroll-2 smooth-scroll">
+        <i class="icon ti-angle-double-down text-white"></i>
+    </a>
+    <!-- /Scroll Button -->
+
+</header>
+<!-- /Hero -->
+
+
+<!-- Main Container -->
+<main class="main-container">
+
+    <!-- Section: About -->
+    <section id="about" class="section-2">
+        <div class="container">
+
+            <!-- Section Header Row -->
+            <div class="row">
+                <div class="col-12">
+                    <header class="section-header">
+                        <!-- Title -->
+                        <div class="section-title">About Company</div>
+                        <!-- /Title -->
+                    </header>
+                </div>
+            </div>
+            <!-- /Section Header Row -->
+
+            <!-- Section Content Row -->
+            <div class="row">
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Text Box -->
+                    <div class="text-box">
+                        <div class="text-box-title">Web-Design</div>
+                        <p class="text-box-text">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
+                        </p>
+                        <a href="index.html#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                    <!-- /Text Box -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Text Box -->
+                    <div class="text-box">
+                        <div class="text-box-title">Photography</div>
+                        <p class="text-box-text">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor.
+                        </p>
+                        <a href="index.html#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                    <!-- /Text Box -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Text Box -->
+                    <div class="text-box">
+                        <div class="text-box-title">Software Development</div>
+                        <p class="text-box-text">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        </p>
+                        <a href="index.html#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                    <!-- /Text Box -->
+                </div>
+                <!-- /Column -->
+            </div>
+            <!-- /Section Content Row -->
+
+        </div>
+    </section>
+    <!-- /Section: About -->
+
+    <!-- Section: Statistic -->
+    <section id="statistic" class="section-2 mask bg-fixed" style="background-image: url(images/trigger-01.jpg);">
+        <div class="container">
+
+            <!-- Section Content Row -->
+            <div class="row">
+
+                <!-- Column -->
+                <div class="col-12 col-lg-3">
+                    <!-- Fact Box -->
+                    <div class="fact-box">
+                        <div class="value animate-number" data-value="180">0</div>
+                        <div class="title">Finished Projects</div>
+                    </div>
+                    <!-- /Fact Box -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-3">
+                    <!-- Fact Box -->
+                    <div class="fact-box">
+                        <div class="value animate-number" data-value="6019">0</div>
+                        <div class="title">Happy Customers</div>
+                    </div>
+                    <!-- /Fact Box -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-3">
+                    <!-- Fact Box -->
+                    <div class="fact-box">
+                        <div class="value animate-number" data-value="993">0</div>
+                        <div class="title">Coffee</div>
+                    </div>
+                    <!-- /Fact Box -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-3">
+                    <!-- Fact Box -->
+                    <div class="fact-box">
+                        <div class="value animate-number" data-value="1809">0</div>
+                        <div class="title">Days at Work</div>
+                    </div>
+                    <!-- /Fact Box -->
+                </div>
+                <!-- /Column -->
+
+            </div>
+            <!-- /Section Content Row -->
+
+        </div>
+    </section>
+    <!-- /Section: Statistic -->
+
+    <!-- Section: Projects -->
+    <section id="projects" class="section-2">
+        <div class="container">
+
+            <!-- Section Content Row -->
+            <div class="row">
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Gallery Item -->
+                    <a href="images/mockup-01.jpg" class="gallery-image popup-image">
+                        <img src="images/mockup-01.jpg" alt="" title="" class="img-fluid">
+                    </a>
+                    <!-- /Gallery Item -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Gallery Item -->
+                    <a href="images/mockup-02.jpg" class="gallery-image popup-image">
+                        <img src="images/mockup-02.jpg" alt="" title="" class="img-fluid">
+                    </a>
+                    <!-- /Gallery Item -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Gallery Item -->
+                    <a href="images/mockup-03.jpg" class="gallery-image popup-image">
+                        <img src="images/mockup-03.jpg" alt="" title="" class="img-fluid">
+                    </a>
+                    <!-- /Gallery Item -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Gallery Item -->
+                    <a href="images/mockup-04.jpg" class="gallery-image popup-image">
+                        <img src="images/mockup-04.jpg" alt="" title="" class="img-fluid">
+                    </a>
+                    <!-- /Gallery Item -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Gallery Item -->
+                    <a href="images/mockup-05.jpg" class="gallery-image popup-image">
+                        <img src="images/mockup-05.jpg" alt="" title="" class="img-fluid">
+                    </a>
+                    <!-- /Gallery Item -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Gallery Item -->
+                    <a href="images/mockup-06.jpg" class="gallery-image popup-image">
+                        <img src="images/mockup-06.jpg" alt="" title="" class="img-fluid">
+                    </a>
+                    <!-- /Gallery Item -->
+                </div>
+                <!-- /Column -->
+
+            </div>
+            <!-- /Section Content Row -->
+
+        </div>
+    </section>
+    <!-- /Section: Projects -->
+
+    <!-- Section: Get Free -->
+    <section id="get-free" class="section-2 mask bg-fixed" style="background-image: url(images/trigger-02.jpg);">
+        <div class="container">
+
+            <!-- Section Content Row -->
+            <div class="row">
+                <div class="col-12 text-center">
+
+                    <div class="h2 font-primary-thin text-white">Watch our Video Course</div>
+
+                    <a href="https://www.youtube.com/watch?v=l-epKcOA7RQ" target="_blank" class="popup-iframe text-white">
+                        <i class="icon ti-control-play fs-3"></i>
+                    </a>
+
+                </div>
+            </div>
+            <!-- /Section Content Row -->
+
+        </div>
+    </section>
+    <!-- /Section: Get Free -->
+
+    <!-- Section: Features -->
+    <section id="features" class="section-2">
+        <div class="container">
+
+            <!-- Section Content Row -->
+            <div class="row section-content">
+
+                <!-- Column -->
+                <div class="col-lg-4">
+                    <!-- Icon box -->
+                    <div class="icon-box">
+                        <i class="icon icon-paintbrush"></i>
+                        <div class="icon-box-title">Clean Design</div>
+                        <p class="icon-box-text">
+                            We try to maintain a very clean minimalistic design for this template.
+                        </p>
+                    </div>
+                    <!-- /Icon box -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-lg-4">
+                    <!-- Icon box -->
+                    <div class="icon-box">
+                        <i class="icon icon-mobile"></i>
+                        <div class="icon-box-title">Mobile Friendly</div>
+                        <p class="icon-box-text">
+                            This template is equally well displayed on all possible devices.
+                        </p>
+                    </div>
+                    <!-- /Icon box -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-lg-4">
+                    <!-- Icon box -->
+                    <div class="icon-box">
+                        <i class="icon icon-heart"></i>
+                        <div class="icon-box-title">Made with <span class="text-danger">Love</span></div>
+                        <p class="icon-box-text">
+                            We invest a lot of energy and love to develop our products to make you like.
+                        </p>
+                    </div>
+                    <!-- /Icon box -->
+                </div>
+                <!-- /Column -->
+
+            </div>
+            <!-- /Section Content Row -->
+
+        </div>
+    </section>
+    <!-- /Section: Features -->
+
+    <!-- Section: Testimonials -->
+    <section id="testimonials" class="section-2 bg-dark text-white">
+        <div class="container">
+
+            <!-- Section Content Row -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-12">
+
+                    <!-- OwlCarousel: Testimonials -->
+                    <div class="owl-carousel owl-theme owl-navigation owl-autoplay" data-owl-items="1">
+
+                        <!-- Testimonial Item -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 text-center">
+
+                                <!-- Author avatar -->
+                                <div class="avatar center mb-4">
+                                    <img src="images/avatar-anna-estrada.jpg" alt="Anna Estrada" title="Anna Estrada">
+                                </div>
+                                <!-- /Author avatar -->
+
+                                <!-- Information -->
+                                <div class="h3 text-white m-0">Anna Estrada</div>
+                                <div class="text-light-muted mb-4">Company Founder & CEO</div>
+                                <!-- /Information -->
+
+                                <p class="text-light-muted fs-1">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /Testimonial Item -->
+
+                        <!-- Testimonial Item -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 text-center">
+
+                                <!-- Author avatar -->
+                                <div class="avatar center mb-4">
+                                    <img src="images/avatar-michael-sanchez.jpg" alt="Michael Sanchez" title="Michael Sanchez">
+                                </div>
+                                <!-- /Author avatar -->
+
+                                <!-- Information -->
+                                <div class="h3 text-white m-0">Michael Sanchez</div>
+                                <div class="text-light-muted mb-4">Web Designer</div>
+                                <!-- /Information -->
+
+                                <p class="text-light-muted fs-1">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /Testimonial Item -->
+
+                        <!-- Testimonial Item -->
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8 text-center">
+
+                                <!-- Author avatar -->
+                                <div class="avatar center mb-4">
+                                    <img src="images/avatar-julie-warren.jpg" alt="Julie Warren" title="Julie Warren">
+                                </div>
+                                <!-- /Author avatar -->
+
+                                <!-- Information -->
+                                <div class="h3 text-white m-0">Julie Warren</div>
+                                <div class="text-light-muted mb-4">SEO Specialist</div>
+                                <!-- /Information -->
+
+                                <p class="text-light-muted fs-1">
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /Testimonial Item -->
+
+                    </div>
+                    <!-- /OwlCarousel: Testimonials -->
+
+                </div>
+            </div>
+            <!-- /Section Content Row -->
+
+        </div>
+    </section>
+    <!-- /Section: Testimonials -->
+
+    <!-- Section: Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+
+            <!-- Section Content Row -->
+            <div class="row section-header">
+
+                <!-- Column -->
+                <a href="index.html#" class="col-lg-4 text-center mb-5 mb-lg-0 d-block">
+                    <i class="icon mb-2 icon-envelope fs-2 mb-3 text-dark"></i>
+                    <div class="h5 mb-2 font-weight-normal">Email</div>
+                    <div class="font-weight-light">clients@example.com</div>
+                </a>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <a href="index.html#" class="col-lg-4 text-center mb-5 mb-lg-0 d-block">
+                    <i class="icon mb-2 icon-tablet fs-2 mb-3 text-dark"></i>
+                    <div class="h5 mb-2 font-weight-normal">Phone</div>
+                    <div class="font-weight-light"><strong>+1 (123)</strong> 456-7890</div>
+                </a>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom"
+                   class="col-lg-4 text-center popup-iframe d-block">
+                    <i class="icon mb-2 icon-map-pin fs-2 mb-3 text-dark"></i>
+                    <div class="h5 mb-2 font-weight-normal">Address</div>
+                    <div class="font-weight-light">1355 Market Street, Suite 900</div>
+                </a>
+                <!-- /Column -->
+
+            </div>
+            <!-- /Section Content Row -->
+
+            <!-- Section Content Row -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-8">
+
+                    <!-- Form -->
+                    <form class="form-ajax">
+
+                        <!-- Form Hidden Fields -->
+                        <input type="hidden" name="form" value="Contact">
+                        <!-- /Form Hidden Fields -->
+
+                        <!-- Row -->
+                        <div class="row">
+
+                            <!-- Form Group -->
+                            <div class="form-group col-md-6">
+                                <div class="md-input">
+                                    <label for="frm-contact-name" class="md-label">Your Name</label>
+                                    <input id="frm-contact-name" type="text" name="name" class="form-control md-form-control" placeholder="Your Name... *" required>
+                                </div>
+                            </div>
+                            <!-- /Form Group -->
+
+                            <!-- Form Group -->
+                            <div class="form-group col-md-6">
+                                <div class="md-input">
+                                    <label for="frm-contact-email" class="md-label">E-mail address</label>
+                                    <input id="frm-contact-email" type="email" name="email" class="md-form-control form-control" placeholder="E-mail address... *" required>
+                                </div>
+                            </div>
+                            <!-- /Form Group -->
+
+                        </div>
+                        <!-- /Row -->
+
+                        <!-- Form Group -->
+                        <div class="form-group mb-4">
+                            <div class="md-input">
+                                <label for="frm-contact-message" class="md-label">Message</label>
+                                <textarea id="frm-contact-message" name="message" class="md-form-control form-control" placeholder="Message... " rows="6"></textarea>
+                            </div>
+                        </div>
+                        <!-- /Form Group -->
+
+                        <!-- Send Message Button -->
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <!-- /Send Message Button -->
+
+                    </form>
+                    <!-- Form -->
+
+                </div>
+            </div>
+            <!-- /Section Content Row -->
+
+        </div>
+    </section>
+    <!-- /Section: Contact -->
+
+    <!-- Trigger -->
+    <section id="trg-purchase" class="section section-trigger">
+        <a href="https://1.envato.market/rWBad" target="_blank"
+           class="btn btn-block btn-primary btn-trg">
+            <i class="icon ti-shopping-cart mr-2"></i>
+            Purchase Clarity Template
+            <strong>$10 only</strong>
+        </a>
+    </section>
+    <!-- /Trigger -->
+
+</main>
+<!-- /Main Container -->
+
+
+<!-- Footer -->
+<footer class="footer border bt-1 border-lighten footer-light bg-white">
+
+    <!-- Footer Line -->
+    <div class="footer-line footer-line-lg">
+        <div class="container">
+            <!-- Row -->
+            <div class="row d-flex align-items-center text-center">
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4">
+                    <!-- Navigation -->
+                    <div class="footer-nav flex-row">
+                        <a href="index.html#" class="footer-nav-link h-custom pl-0 pr-0">Shop</a>
+                        <span class="separator mr-2 ml-2"></span>
+                        <a href="index.html#" class="footer-nav-link h-custom pl-0 pr-0">Portfolio</a>
+                        <span class="separator mr-2 ml-2"></span>
+                        <a href="index.html#" class="footer-nav-link h-custom pl-0 pr-0">Contact</a>
+                    </div>
+                    <!-- /Navigation -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4 text-center">
+                    <!-- Brand -->
+                    <a href="http://vtdes.ru/demo/clarity/1.1.1/index.html" class="footer-brand h-custom">Clarity</a>
+                    <!-- /Brand -->
+                </div>
+                <!-- /Column -->
+
+                <!-- Column -->
+                <div class="col-12 col-lg-4 text-right">
+                    <!-- Copyright -->
+                    Copyright &copy; 2016-2019 <a href="http://vtdes.ru/" class="link">vtdes.ru</a>
+                    <!-- /Copyright -->
+                </div>
+                <!-- /Column -->
+
+            </div>
+            <!-- /Row -->
+        </div>
+    </div>
+    <!-- /Footer Line -->
+
+</footer>
+<!-- /Footer -->
+
+
+<!-- Overlay -->
+<div class="overlay">
+    <div class="loader"></div>
+</div>
+<!-- /Overlay -->
+
+
+<!-- Scripts -->
+<script src="javascripts/jquery.stellar.min.js"></script>
+<script src="javascripts/popper.min.js"></script>
+<script src="javascripts/jquery-3.3.1.min.js"></script>
+<script src="components/bootstrap/js/bootstrap.min.js"></script>
+<script src="components/owl-carousel/owl.carousel.min.js"></script>
+<script src="components/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="javascripts/jquery.appear.js"></script>
+<script src="javascripts/jquery.animateNumber.min.js"></script>
+<script src="javascripts/circle-progress.min.js"></script>
+<script src="components/prism/prism.js"></script>
+<script src="javascripts/general.js"></script>
+<!-- /Scripts -->
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(35435255, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/35435255" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</body>
