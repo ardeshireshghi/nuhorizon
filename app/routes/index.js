@@ -4,21 +4,24 @@ const router = express.Router();
 const Booking = require('../booking/models/booking');
 const BookingRepository = require('../booking/repository');
 const { Storage } = require('../store/store');
+
 const db = require('../data/db.json');
+const store = new Storage(db);
+const bookingRepo = new BookingRepository(store);
 
-const exitHandler = (exitCode) => {
-  console.log('Syncing to DB');
-  fs.writeFileSync(`${__dirname}/../data/db.json`, bookingRepo.store().toString());
-  if (!exitCode) process.exit();
+const setBookingStoreSync = (store) => {
+  const exitHandler = (exitCode) => {
+    console.log('Syncing to DB');
+    fs.writeFileSync(`${__dirname}/../data/db.json`, store.toString());
+    if (!exitCode) process.exit();
+  };
+
+  // Save to DB before exit
+  process.on('exit', exitHandler);
+  process.on('SIGINT', exitHandler);
+  process.on('SIGUSR2', exitHandler);
+  process.on('SIGUSR2', exitHandler);
 };
-
-const bookingRepo = new BookingRepository(new Storage(db));
-
-// Save to DB before exit
-process.on('exit', exitHandler);
-process.on('SIGINT', exitHandler);
-process.on('SIGUSR2', exitHandler);
-process.on('SIGUSR2', exitHandler);
 
 router.get('/api/reservations', (_, res) => res.json(bookingRepo.all()));
 router.post('/api/booking', (req, res) => {
@@ -44,4 +47,7 @@ router.post('/api/booking', (req, res) => {
 });
 
 router.get('/', (_, res) => res.render('home'));
+
+setBookingStoreSync(store);
+
 module.exports = router;
