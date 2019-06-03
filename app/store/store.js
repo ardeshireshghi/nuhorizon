@@ -1,20 +1,23 @@
 const { objectFromEntries } = require('../utils');
-
 exports.Storage = class {
   constructor(dataObject = {}) {
     this.store = new Map(Object.entries(dataObject));
   }
 
+  get(...thisArgs) {
+    return this.store.get(...thisArgs);
+  }
+
   set(...thisArgs) {
-    this.store.set(...thisArgs);
+    return this.store.set(...thisArgs);
   }
 
   has(...thisArgs) {
-    this.store.has(...thisArgs);
+    return this.store.has(...thisArgs);
   }
 
   values() {
-    this.store.values();
+    return this.store.values();
   }
 
   toString() {
