@@ -6,16 +6,18 @@ const BookingRepository = require('../booking/repository');
 const { Storage } = require('../store/store');
 const db = require('../data/db.json');
 
-const exitHandler = () => {
+const exitHandler = (exitCode) => {
   console.log('Syncing to DB');
   fs.writeFileSync(`${__dirname}/../data/db.json`, bookingRepo.store().toString());
-  process.exit();
+  if (!exitCode) process.exit();
 };
 
 const bookingRepo = new BookingRepository(new Storage(db));
 
 // Save to DB before exit
-process.on('SIGUSR1', exitHandler);
+process.on('exit', exitHandler);
+process.on('SIGINT', exitHandler);
+process.on('SIGUSR2', exitHandler);
 process.on('SIGUSR2', exitHandler);
 
 router.get('/api/reservations', (_, res) => res.json(bookingRepo.all()));
