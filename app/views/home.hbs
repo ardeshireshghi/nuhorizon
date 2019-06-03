@@ -1,156 +1,5 @@
-<body class="has-navbar-fixed p-0">
-{{#each thebody}}
-    Key: {{@key}} Value = {{this}}
-{{/each}}
-<!-- Navigation -->
-<nav class="navbar navbar-2 navbar-fixed navbar-expand-lg navbar-top-transparent navbar-top-dark navbar-light">
-    <div class="navbar-wrapper affix">
-
-        <!-- Navigation Line -->
-        <div class="navbar-line bg-white">
-            <div class="container">
-
-                <!-- Brand -->
-                <a class="navbar-brand" href="http://vtdes.ru/demo/clarity/1.1.1/index.html">NuHorizon</a>
-                <!-- /Brand -->
-
-                <!-- Toggler -->
-                <button class="navbar-toggler" type="button"
-                        data-toggle="collapse" data-target="#navigation"
-                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- /Toggler -->
-
-                <!-- Collapse -->
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav ml-auto">
-
-                        <!-- Navigation Item -->
-                        <li class="nav-item">
-                            <a class="nav-link smooth-scroll" href="index.html#home">Home</a>
-                        </li>
-                        <!-- /Navigation Item -->
-
-                        <!-- Navigation Item -->
-                        <li class="nav-item">
-                            <a class="nav-link smooth-scroll" href="index.html#about">About</a>
-                        </li>
-                        <!-- /Navigation Item -->
-
-                        <!-- Navigation Item -->
-                        <li class="nav-item">
-                            <a class="nav-link smooth-scroll" href="index.html#projects">Projects</a>
-                        </li>
-                        <!-- /Navigation Item -->
-
-                        <!-- Navigation Item -->
-                        <li class="nav-item">
-                            <a class="nav-link smooth-scroll" href="index.html#testimonials">Testimonials</a>
-                        </li>
-                        <!-- /Navigation Item -->
-
-                        <!-- Navigation Item -->
-                        <li class="nav-item">
-                            <a class="nav-link smooth-scroll" href="index.html#contact">Contact</a>
-                        </li>
-                        <!-- /Navigation Item -->
-
-                        <li class="nav-item d-flex align-items-center">
-                            <a href="https://1.envato.market/rWBad" target="_blank" class="nav-btn btn btn-circle btn-light">
-                                <i class="icon fa fa-shopping-cart"></i>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-                <!-- /Collapse -->
-
-            </div>
-        </div>
-        <!-- /Navigation Line -->
-
-    </div>
-</nav>
-<!-- /Navigation -->
-
-
-<!-- Hero -->
-<header id="home" class="h-100 position-relative mask bg-fixed hero__image">
-    <!-- Middle Wrapper -->
-    <div class="middle">
-
-        <!-- Content Container -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="display-4 text-white font-primary-thin line-0p5">Bringing things to NuHorizon</div>
-                    <a href="#booking-form" class="btn btn-lg btn-outline-primary popup-modal">Book Now</a>
-                    <div class="form-container mfp-hide" id="booking-form">
-                        <form class="form-ajax" method="POST" action="api/booking">
-
-                            <!-- Form Hidden Fields -->
-                            <input type="hidden" name="form" value="Contact">
-                            <!-- /Form Hidden Fields -->
-
-                            <!-- Row -->
-                            <div class="row">
-
-                                <!-- Form Group -->
-                                <div class="form-group col-md-6">
-                                    <div class="md-input">
-                                        <label for="frm-contact-name" class="md-label">Your Name</label>
-                                        <input id="frm-contact-name" type="text" name="name" class="form-control md-form-control" placeholder="Your Name... *" required>
-                                    </div>
-                                </div>
-                                <!-- /Form Group -->
-
-                                <!-- Form Group -->
-                                <div class="form-group col-md-6">
-                                    <div class="md-input">
-                                        <label for="frm-contact-email" class="md-label">E-mail address</label>
-                                        <input id="frm-contact-email" type="email" name="email" class="md-form-control form-control" placeholder="E-mail address... *" required>
-                                    </div>
-                                </div>
-                                <!-- /Form Group -->
-
-                            </div>
-                            <!-- /Row -->
-
-                            <!-- Form Group -->
-                            <div class="form-group mb-4">
-                                <div class="md-input">
-                                    <label for="frm-contact-message" class="md-label">Date</label>
-                                    <input type="date" id="date" name="event_date" class="md-form-control form-control form-control--date">
-                                </div>
-                            </div>
-                            <!-- /Form Group -->
-
-                            <!-- Send Message Button -->
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                            <!-- /Send Message Button -->
-
-
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- /Content Container -->
-
-    </div>
-    <!-- /Middle Wrapper -->
-
-    <!-- Scroll Button -->
-    <a href="index.html#about" class="hero-scroll-2 smooth-scroll">
-        <i class="icon ti-angle-double-down text-white"></i>
-    </a>
-    <!-- /Scroll Button -->
-
-</header>
-<!-- /Hero -->
-
+{{> nav }}
+{{> hero }}
 
 <!-- Main Container -->
 <main class="main-container">
@@ -290,8 +139,8 @@
                 <!-- Column -->
                 <div class="col-12 col-lg-4">
                     <!-- Gallery Item -->
-                    <a href="images/mockup-01.jpg" class="gallery-image popup-image">
-                        <img src="images/mockup-01.jpg" alt="" title="" class="img-fluid">
+                    <a href="/images/mockup-01.jpg" class="gallery-image popup-image">
+                        <img src="/images/mockup-01.jpg" alt="" title="" class="img-fluid">
                     </a>
                     <!-- /Gallery Item -->
                 </div>
@@ -300,8 +149,8 @@
                 <!-- Column -->
                 <div class="col-12 col-lg-4">
                     <!-- Gallery Item -->
-                    <a href="images/mockup-02.jpg" class="gallery-image popup-image">
-                        <img src="images/mockup-02.jpg" alt="" title="" class="img-fluid">
+                    <a href="/images/mockup-02.jpg" class="gallery-image popup-image">
+                        <img src="/images/mockup-02.jpg" alt="" title="" class="img-fluid">
                     </a>
                     <!-- /Gallery Item -->
                 </div>
@@ -310,8 +159,8 @@
                 <!-- Column -->
                 <div class="col-12 col-lg-4">
                     <!-- Gallery Item -->
-                    <a href="images/mockup-03.jpg" class="gallery-image popup-image">
-                        <img src="images/mockup-03.jpg" alt="" title="" class="img-fluid">
+                    <a href="/images/mockup-03.jpg" class="gallery-image popup-image">
+                        <img src="/images/mockup-03.jpg" alt="" title="" class="img-fluid">
                     </a>
                     <!-- /Gallery Item -->
                 </div>
@@ -320,8 +169,8 @@
                 <!-- Column -->
                 <div class="col-12 col-lg-4">
                     <!-- Gallery Item -->
-                    <a href="images/mockup-04.jpg" class="gallery-image popup-image">
-                        <img src="images/mockup-04.jpg" alt="" title="" class="img-fluid">
+                    <a href="/images/mockup-04.jpg" class="gallery-image popup-image">
+                        <img src="/images/mockup-04.jpg" alt="" title="" class="img-fluid">
                     </a>
                     <!-- /Gallery Item -->
                 </div>
@@ -330,8 +179,8 @@
                 <!-- Column -->
                 <div class="col-12 col-lg-4">
                     <!-- Gallery Item -->
-                    <a href="images/mockup-05.jpg" class="gallery-image popup-image">
-                        <img src="images/mockup-05.jpg" alt="" title="" class="img-fluid">
+                    <a href="/images/mockup-05.jpg" class="gallery-image popup-image">
+                        <img src="/images/mockup-05.jpg" alt="" title="" class="img-fluid">
                     </a>
                     <!-- /Gallery Item -->
                 </div>
@@ -340,8 +189,8 @@
                 <!-- Column -->
                 <div class="col-12 col-lg-4">
                     <!-- Gallery Item -->
-                    <a href="images/mockup-06.jpg" class="gallery-image popup-image">
-                        <img src="images/mockup-06.jpg" alt="" title="" class="img-fluid">
+                    <a href="/images/mockup-06.jpg" class="gallery-image popup-image">
+                        <img src="/images/mockup-06.jpg" alt="" title="" class="img-fluid">
                     </a>
                     <!-- /Gallery Item -->
                 </div>
@@ -449,7 +298,7 @@
 
                                 <!-- Author avatar -->
                                 <div class="avatar center mb-4">
-                                    <img src="images/avatar-anna-estrada.jpg" alt="Anna Estrada" title="Anna Estrada">
+                                    <img src="/images/avatar-anna-estrada.jpg" alt="Anna Estrada" title="Anna Estrada">
                                 </div>
                                 <!-- /Author avatar -->
 
@@ -471,7 +320,7 @@
 
                                 <!-- Author avatar -->
                                 <div class="avatar center mb-4">
-                                    <img src="images/avatar-michael-sanchez.jpg" alt="Michael Sanchez" title="Michael Sanchez">
+                                    <img src="/images/avatar-michael-sanchez.jpg" alt="Michael Sanchez" title="Michael Sanchez">
                                 </div>
                                 <!-- /Author avatar -->
 
@@ -493,7 +342,7 @@
 
                                 <!-- Author avatar -->
                                 <div class="avatar center mb-4">
-                                    <img src="images/avatar-julie-warren.jpg" alt="Julie Warren" title="Julie Warren">
+                                    <img src="/images/avatar-julie-warren.jpg" alt="Julie Warren" title="Julie Warren">
                                 </div>
                                 <!-- /Author avatar -->
 
@@ -613,71 +462,10 @@
         </div>
     </section>
     <!-- /Section: Contact -->
-
-    <!-- Trigger -->
-    <section id="trg-purchase" class="section section-trigger">
-        <a href="https://1.envato.market/rWBad" target="_blank"
-           class="btn btn-block btn-primary btn-trg">
-            <i class="icon ti-shopping-cart mr-2"></i>
-            Purchase Clarity Template
-            <strong>$10 only</strong>
-        </a>
-    </section>
-    <!-- /Trigger -->
-
 </main>
 <!-- /Main Container -->
 
-
-<!-- Footer -->
-<footer class="footer border bt-1 border-lighten footer-light bg-white">
-
-    <!-- Footer Line -->
-    <div class="footer-line footer-line-lg">
-        <div class="container">
-            <!-- Row -->
-            <div class="row d-flex align-items-center text-center">
-
-                <!-- Column -->
-                <div class="col-12 col-lg-4">
-                    <!-- Navigation -->
-                    <div class="footer-nav flex-row">
-                        <a href="index.html#" class="footer-nav-link h-custom pl-0 pr-0">Shop</a>
-                        <span class="separator mr-2 ml-2"></span>
-                        <a href="index.html#" class="footer-nav-link h-custom pl-0 pr-0">Portfolio</a>
-                        <span class="separator mr-2 ml-2"></span>
-                        <a href="index.html#" class="footer-nav-link h-custom pl-0 pr-0">Contact</a>
-                    </div>
-                    <!-- /Navigation -->
-                </div>
-                <!-- /Column -->
-
-                <!-- Column -->
-                <div class="col-12 col-lg-4 text-center">
-                    <!-- Brand -->
-                    <a href="http://vtdes.ru/demo/clarity/1.1.1/index.html" class="footer-brand h-custom">Clarity</a>
-                    <!-- /Brand -->
-                </div>
-                <!-- /Column -->
-
-                <!-- Column -->
-                <div class="col-12 col-lg-4 text-right">
-                    <!-- Copyright -->
-                    Copyright &copy; 2016-2019 <a href="http://vtdes.ru/" class="link">vtdes.ru</a>
-                    <!-- /Copyright -->
-                </div>
-                <!-- /Column -->
-
-            </div>
-            <!-- /Row -->
-        </div>
-    </div>
-    <!-- /Footer Line -->
-
-</footer>
-<!-- /Footer -->
-
-
+{{> footer}}
 <!-- Overlay -->
 <div class="overlay">
     <div class="loader"></div>
@@ -686,19 +474,18 @@
 
 
 <!-- Scripts -->
-<script src="javascripts/jquery.stellar.min.js"></script>
-<script src="javascripts/popper.min.js"></script>
-<script src="javascripts/jquery-3.3.1.min.js"></script>
-<script src="components/bootstrap/js/bootstrap.min.js"></script>
-<script src="components/owl-carousel/owl.carousel.min.js"></script>
-<script src="components/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="javascripts/jquery.appear.js"></script>
-<script src="javascripts/jquery.animateNumber.min.js"></script>
-<script src="javascripts/circle-progress.min.js"></script>
-<script src="components/prism/prism.js"></script>
-<script src="javascripts/general.js"></script>
+<script src="/javascripts/jquery.stellar.min.js"></script>
+<script src="/javascripts/popper.min.js"></script>
+<script src="/javascripts/jquery-3.3.1.min.js"></script>
+<script src="/components/bootstrap/js/bootstrap.min.js"></script>
+<script src="/components/owl-carousel/owl.carousel.min.js"></script>
+<script src="/components/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="/javascripts/jquery.appear.js"></script>
+<script src="/javascripts/jquery.animateNumber.min.js"></script>
+<script src="/javascripts/circle-progress.min.js"></script>
+<script src="/components/prism/prism.js"></script>
+<script src="/javascripts/general.js"></script>
 <!-- /Scripts -->
 
 
 <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(35435255, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/35435255" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-</body>

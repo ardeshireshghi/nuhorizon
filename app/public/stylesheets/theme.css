@@ -3990,7 +3990,13 @@ a.badge.badge-outline-soundcloud:active,
   }
 
   .form-control--date {
-    text-indent: 1rem;
+    transition: padding 0.25s !important;
+    padding-left: 5rem !important;
+  }
+
+  .focus .form-control--date,
+  .md-completed .form-control--date {
+    padding-left: 0 !important;
   }
 
 /* ------------------------------------------------------------------------------------------------------------------ *
@@ -7965,7 +7971,9 @@ button.text-lighten:active {
  * ------------------------------------------------------------------------------------------------------------------ */
 .main-container {
   width: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  min-height: calc(100vh - 153px);
+  }
 
 /* ------------------------------------------------------------------------------------------------------------------ *
  * [Sections]
@@ -8111,6 +8119,11 @@ button.text-lighten:active {
       color: #111;
       font-size: 2.125rem;
       font-weight: 300; }
+
+    .section-2 .section-header .section-title--error {
+    color: #fc574e;}
+
+
 
 /* ------------------------------------------------------------------------------------------------------------------ *
  * [Fact Box]

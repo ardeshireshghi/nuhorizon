@@ -6,10 +6,17 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 
 const app = express();
+const hbs = require( 'express-handlebars');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+app.engine( 'hbs', hbs({
+  extname: 'hbs',
+  defaultView: 'default',
+  layoutsDir: __dirname + '/views/',
+  partialsDir: __dirname + '/views/partials/'
+}));
 
 app.use(logger('dev'));
 app.use(express.json());

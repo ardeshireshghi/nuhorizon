@@ -1,0 +1,82 @@
+<!-- Hero -->
+<header id="home" class="h-100 position-relative mask bg-fixed hero__image">
+    <!-- Middle Wrapper -->
+    <div class="middle">
+
+        <!-- Content Container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="display-4 text-white font-primary-thin line-0p5">Bringing things to NuHorizon</div>
+                    <a href="#booking-form" class="btn btn-lg btn-outline-primary popup-modal">Book Now</a>
+                    <div class="form-container mfp-hide" id="booking-form">
+                        <form class="form-ajax" method="POST" action="api/booking">
+
+                            <!-- Form Hidden Fields -->
+                            <input type="hidden" name="form" value="Contact">
+                            <!-- /Form Hidden Fields -->
+
+                            <!-- Row -->
+                            <div class="row">
+
+                                <!-- Form Group -->
+                                <div class="form-group col-md-6">
+                                    <div class="md-input">
+                                        <label for="frm-contact-name" class="md-label">Your Name</label>
+                                        <input id="frm-contact-name" type="text" name="name" class="form-control md-form-control" placeholder="Your Name... *" required>
+                                    </div>
+                                </div>
+                                <!-- /Form Group -->
+
+                                <!-- Form Group -->
+                                <div class="form-group col-md-6">
+                                    <div class="md-input">
+                                        <label for="frm-contact-email" class="md-label">E-mail address</label>
+                                        <input id="frm-contact-email" type="email" name="email" class="md-form-control form-control" placeholder="E-mail address... *" required>
+                                    </div>
+                                </div>
+                                <!-- /Form Group -->
+
+                            </div>
+                            <!-- /Row -->
+                            <div class="row mb-4">
+                              <!-- Form Group -->
+                              <div class="form-group col-md-6">
+                                  <div class="md-input">
+                                      <label for="frm-contact-message" class="md-label">Pick a Date</label>
+                                      <input type="date" id="date" name="date" class="md-form-control form-control form-control--date">
+                                  </div>
+                              </div>
+                              <div class="form-group col-md-6">
+                                <div class="md-input">
+                                    <label for="frm-contact-message" class="md-label">Choose time</label>
+                                    <input type="time" id="time" min="11:00" max="22:00" step="3600" name="time" class="md-form-control form-control form-control--date">
+                                </div>
+                              </div>
+                            </div>
+                            <!-- /Form Group -->
+
+                            <!-- Send Message Button -->
+                            <button type="submit" class="btn btn-primary btn-lg">Book</button>
+                            <!-- /Send Message Button -->
+
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /Content Container -->
+
+    </div>
+    <!-- /Middle Wrapper -->
+
+    <!-- Scroll Button -->
+    <a href="index.html#about" class="hero-scroll-2 smooth-scroll">
+        <i class="icon ti-angle-double-down text-white"></i>
+    </a>
+    <!-- /Scroll Button -->
+
+</header>
+<!-- /Hero -->

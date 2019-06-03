@@ -1,0 +1,51 @@
+<!-- Navigation -->
+{{> nav }}
+<!-- Main Container -->
+<main class="main-container">
+
+    <!-- Section: About -->
+    <section id="about" class="section-2">
+        <div class="container">
+
+            <!-- Section Header Row -->
+            <div class="row">
+                <div class="col-12">
+                    <header class="section-header">
+                        {{#if error}}
+                          <div class="section-title section-title--error">{{error}}</div>
+                        {{else}}
+                          <div class="section-title">Thanks for booking. <br> Confirmation email is sent to {{email}}</div>
+                        {{/if}}
+                    </header>
+                </div>
+            </div>
+            <!-- /Section Header Row -->
+    </div>
+    </section>
+</main>
+<!-- /Main Container -->
+{{> footer }}
+
+<!-- Overlay -->
+<div class="overlay">
+    <div class="loader"></div>
+</div>
+<!-- /Overlay -->
+
+
+<!-- Scripts -->
+<script src="/javascripts/jquery.stellar.min.js"></script>
+<script src="/javascripts/popper.min.js"></script>
+<script src="/javascripts/jquery-3.3.1.min.js"></script>
+<script src="/components/bootstrap/js/bootstrap.min.js"></script>
+<script src="/components/owl-carousel/owl.carousel.min.js"></script>
+<script src="/components/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="/javascripts/jquery.appear.js"></script>
+<script src="/javascripts/jquery.animateNumber.min.js"></script>
+<script src="/javascripts/circle-progress.min.js"></script>
+<script src="/components/prism/prism.js"></script>
+<script src="/javascripts/general.js"></script>
+<!-- /Scripts -->
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(35435255, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/35435255" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
