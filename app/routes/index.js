@@ -24,7 +24,7 @@ const setBookingStoreSync = (store) => {
 };
 
 router.get('/api/reservations', (_, res) => res.json(bookingRepo.all()));
-router.post('/api/booking', (req, res) => {
+router.post('/api/bookings', (req, res) => {
   const booking = Booking.create(req.body);
 
   if (!booking.valid()) {
