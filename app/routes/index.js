@@ -46,6 +46,10 @@ router.post('/api/bookings', (req, res) => {
   });
 });
 
+router.get('/reservations', (_, res) => res.render('reservations', {
+  bookings: bookingRepo.all()
+}));
+
 router.get('/', (_, res) => res.render('home'));
 
 setBookingStoreSync(store);
