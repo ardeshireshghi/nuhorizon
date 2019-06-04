@@ -6889,10 +6889,10 @@ html, body {
 }
 
 html {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   html {
     font-size: 1em;
   }
