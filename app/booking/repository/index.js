@@ -14,7 +14,7 @@ module.exports = class BookingRepository {
   }
 
   _uniqueKey(booking) {
-    return Date.parse(`${booking.date} ${booking.time}`).toString();
+    return Date.parse(`${booking.date} ${booking.time}`);
   }
 
   all() {
