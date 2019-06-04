@@ -6892,7 +6892,7 @@ html {
   font-size: 0.8em;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   html {
     font-size: 1em;
   }
