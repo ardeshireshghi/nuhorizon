@@ -6885,7 +6885,19 @@ pre[class*="language-"] {
 
 html, body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
+
+html {
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 1em;
+  }
+}
+
 
 body {
   overflow-x: hidden;
